@@ -1,0 +1,26 @@
+{
+  "name": "codeclub-jesters",
+  "version": "0.1.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "jest --verbose --watchAll",
+    "repl": "node -i -e \"const tests = require('./lib/repl'); console.log(tests);\"",
+    "lint": "eslint .; exit 0"
+  },
+  "jest": {
+    "testResultsProcessor": "jest-codeclub-reporter",
+    "coverageDirectory": "coverage/"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "jest-codeclub-reporter": "0.*"
+  },
+  "dependencies": {
+    "jest": "^19.0.0",
+    "eslint": "^3.17.1",
+    "faker": "^4.1.0",
+    "rewire": "^2.5.2"
+  }
+}
