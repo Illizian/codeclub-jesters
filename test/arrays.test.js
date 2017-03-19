@@ -15,7 +15,7 @@ describe('Arrays', () => {
   test('2 - Return the index of a string as `item` from the `array`', () => {
     expect(arrays.findItemInArray(arr, 4)).toBe(3);
     expect(arrays.findItemInArray(arr, 8)).toBe(7);
-    expect(arrays.findItemInArray(arr, 2)).toBe(2);
+    expect(arrays.findItemInArray(arr, 2)).toBe(1);
   });
 
   test('3 - Remove the item at the `index` in `array`', () => {
