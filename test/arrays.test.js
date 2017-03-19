@@ -31,6 +31,7 @@ describe('Arrays', () => {
   test('5 - Remove all numbers in `array` that are larger than `min`', () => {
     expect(arrays.isBigger(arr, 5)).toEqual([6,7,8,9,10]);
     expect(arrays.isBigger(arr, 1)).toEqual([2,3,4,5,6,7,8,9,10]);
+    expect(arrays.isBigger(arr.reverse(), 4)).toEqual([10,9,8,7,6,5]);
   });
 
   test('6 - Double (x2) all numbers in the `array`', () => {
