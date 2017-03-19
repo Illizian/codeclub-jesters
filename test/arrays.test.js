@@ -22,7 +22,7 @@ describe('Arrays', () => {
     expect(arrays.sum(arr)).toBe(55)
   });
 
-  test('5 - Remove all numbers in `array` that aren\'t larger than `min`', () => {
+  test('5 - Remove all numbers in `array` that are larger than `min`', () => {
     expect(arrays.isBigger(arr, 5)).toEqual([6,7,8,9,10]);
   });
 
