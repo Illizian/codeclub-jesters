@@ -40,6 +40,7 @@ describe('Regex', () => {
   });
 
   test('6 - Return true if `string` contains correctly-formatted monetary amounts in GBP', () => {
+    expect(regex.isGBP('£1320.03')).toBe(true);
     expect(regex.isGBP('£132.03')).toBe(true);
     expect(regex.isGBP('£32.03')).toBe(true);
     expect(regex.isGBP('£2.03')).toBe(true);
@@ -47,6 +48,7 @@ describe('Regex', () => {
     expect(regex.isGBP('£20,933,209.93')).toBe(true);
     expect(regex.isGBP('£20,933,209')).toBe(true);
     expect(regex.isGBP('£459,049,393.21')).toBe(true);
+    expect(regex.isGBP('£1234,344.34')).toBe(false);
     expect(regex.isGBP('34,344.34')).toBe(false);
     expect(regex.isGBP('£,344.34')).toBe(false);
     expect(regex.isGBP('£34,344.3')).toBe(false);
