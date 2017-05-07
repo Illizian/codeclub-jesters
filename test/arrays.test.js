@@ -1,4 +1,4 @@
-const arrays = require('../arrays');
+const arrays = require('../src/arrays');
 
 describe('Arrays', () => {
   test('1 - Return the item from the `array` at the `index`', () => {
